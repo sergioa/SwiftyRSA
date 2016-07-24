@@ -11,7 +11,7 @@
 
 @implementation NSData (NSData_SwiftyRSASHA)
 
-- (nonnull NSData*) SwiftyRSASHA1 {
+- (nonnull NSData*) swiftyRSASHA1 {
     unsigned int outputLength = CC_SHA1_DIGEST_LENGTH;
     unsigned char output[outputLength];
     
@@ -19,7 +19,7 @@
     return [NSData dataWithBytes:output length:outputLength];
 }
 
-- (nonnull NSData*) SwiftyRSASHA224 {
+- (nonnull NSData*) swiftyRSASHA224 {
     unsigned int outputLength = CC_SHA224_DIGEST_LENGTH;
     unsigned char output[outputLength];
     
@@ -27,7 +27,7 @@
     return [NSData dataWithBytes:output length:outputLength];
 }
 
-- (nonnull NSData*) SwiftyRSASHA256 {
+- (nonnull NSData*) swiftyRSASHA256 {
     unsigned int outputLength = CC_SHA256_DIGEST_LENGTH;
     unsigned char output[outputLength];
     
@@ -35,7 +35,7 @@
     return [NSData dataWithBytes:output length:outputLength];
 }
 
-- (nonnull NSData*) SwiftyRSASHA384 {
+- (nonnull NSData*) swiftyRSASHA384 {
     unsigned int outputLength = CC_SHA384_DIGEST_LENGTH;
     unsigned char output[outputLength];
     
@@ -43,7 +43,7 @@
     return [NSData dataWithBytes:output length:outputLength];
 }
 
-- (nonnull NSData*) SwiftyRSASHA512 {
+- (nonnull NSData*) swiftyRSASHA512 {
     unsigned int outputLength = CC_SHA512_DIGEST_LENGTH;
     unsigned char output[outputLength];
     

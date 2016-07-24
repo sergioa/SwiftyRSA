@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495D092D1D45120D00776B43 /* Data+SHA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D092C1D45120D00776B43 /* Data+SHA.swift */; };
 		BB8460AE1CC608F6006F802C /* NSData+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = BB8460AC1CC608F6006F802C /* NSData+SHA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB8460AF1CC608F6006F802C /* NSData+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8460AD1CC608F6006F802C /* NSData+SHA.m */; };
 		C01F96141C5AC3E300F232AC /* SwiftyRSAObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C01F96131C5AC3E300F232AC /* SwiftyRSAObjcTests.m */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		495D092C1D45120D00776B43 /* Data+SHA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+SHA.swift"; sourceTree = "<group>"; };
 		BB8460AC1CC608F6006F802C /* NSData+SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SHA.h"; sourceTree = "<group>"; };
 		BB8460AD1CC608F6006F802C /* NSData+SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SHA.m"; sourceTree = "<group>"; };
 		C01F96131C5AC3E300F232AC /* SwiftyRSAObjcTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftyRSAObjcTests.m; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				C03D827B1B45E649008711CF /* SwiftyRSA.h */,
 				C03D82921B45E663008711CF /* SwiftyRSA.swift */,
 				C03D82791B45E649008711CF /* Supporting Files */,
+				495D092C1D45120D00776B43 /* Data+SHA.swift */,
 			);
 			path = SwiftyRSA;
 			sourceTree = "<group>";
@@ -198,14 +201,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Scoop;
 				TargetAttributes = {
 					C03D82751B45E649008711CF = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = C4QCJNP6EF;
+						DevelopmentTeamName = "Sergio Artero (Personal Team)";
+						LastSwiftMigration = 0800;
 					};
 					C03D82801B45E649008711CF = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = C4QCJNP6EF;
+						DevelopmentTeamName = "Sergio Artero (Personal Team)";
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -256,6 +265,7 @@
 			files = (
 				BB8460AF1CC608F6006F802C /* NSData+SHA.m in Sources */,
 				C03D82931B45E663008711CF /* SwiftyRSA.swift in Sources */,
+				495D092D1D45120D00776B43 /* Data+SHA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +395,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -402,6 +413,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.takescoop.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -422,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.takescoop.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -437,6 +451,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.takescoop.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
